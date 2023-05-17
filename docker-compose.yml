@@ -9,6 +9,7 @@ services:
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
+      - ./extra-addons:/mnt/extra-addons
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=odoo
